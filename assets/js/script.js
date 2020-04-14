@@ -51,7 +51,7 @@ $(".list-group").on("click", "p", function() {
    .trim();
 });
 
-$(".list-group").on("blur", "textarea" function() {
+$(".list-group").on("blur", "textarea", function() {
    var text = $(this)
    .val()
    .trim();
@@ -72,7 +72,7 @@ $(".list-group").on("blur", "textarea" function() {
    .addClass("m-1")
    .text(text);
    $(this).replaceWith(taskP)
-});
+
 
 var textInput = $("<textarea>")
    .addClass("form-control")
@@ -81,7 +81,7 @@ var textInput = $("<textarea>")
    $(this).replaceWith(textInput);
 
    textInput.trigger("focus");
-
+  });
    // due date was clicked
 $(".list-group").on("click", "span", function() {
   // get current text
